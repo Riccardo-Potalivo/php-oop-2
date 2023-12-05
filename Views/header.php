@@ -32,6 +32,9 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="books_shop.php">Books</a>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="games_shop.php">Games</a>
+                    </li>
                 </ul>
             </div>
         </nav>

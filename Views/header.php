@@ -22,8 +22,18 @@
 
 <body>
     <header>
-        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <h1>OOP 2</h1>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.php">Movies</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="books_shop.php">Books</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>

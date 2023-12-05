@@ -30,7 +30,7 @@ class Movie
         $vote = $this->vote_average;
         $genre = $this->genre->name;
 
-        include __DIR__ . '/../Views/card.php';
+        include __DIR__ . '/../Views/cardMovie.php';
     }
 
 }

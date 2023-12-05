@@ -1,22 +1,9 @@
-# OOP 1
+# OOP 2
 
-### Milestone 1
+### Descrizione
 
-Definita una classe ‘Movie’
-
-- all'interno della classe sono dichiarate delle variabili d'istanza
-- all'interno della classe è definito un costruttore
-- all'interno della classe è definito almeno un metodo
-- vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori delle relative proprietà
-
-### Milestone 2
-
-Creare un layout completo per stampare a schermo una lista di movies.
-
-### Bonus 1
-
-Modificare la classe Movie in modo che accetti piú di un genere.
-
-### Bonus 2
-
-Aggiungere alla classe Movie un metodo (per esempio stampare la bandiera)
+L'e-commerce vende prodotti
+I prodotti possono avere dei generi o delle categorie
+I prodotti saranno oltre ai movie, anche book, giochi, etc.
+Stampiamo delle card contenenti i dettagli dei vari prodotti, come immagine, titolo, prezzo, ecc.
+prepariamo una pagina per ogni tipo (classe di oggetti) e creiamo in header dei link per navigare le varie sezioni del sito

@@ -2,9 +2,14 @@
     <div class="card">
         <img src="<?= $img ?>" class="card-img-top my-ratio" alt="<?= $title ?>">
         <div class="card-body">
-            <h5 class="card-title">
-                <?= $title ?>
-            </h5>
+            <div class="d-flex">
+                <div class="icon_box">
+                    <img src="<?= $icon ?>" alt="logo" class="icon">
+                </div>
+                <h5 class="card-title">
+                    <?= $title ?>
+                </h5>
+            </div>
             <!-- <div>
                 <?= $lang ?>
             </div>

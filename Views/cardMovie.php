@@ -18,6 +18,9 @@
                 <div>
                     <?= $genre ?>
                 </div>
+                <p class="card-text">
+                    <?= $price ?>
+                </p>
             </div>
         </div>
     </div>

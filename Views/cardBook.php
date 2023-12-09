@@ -5,20 +5,9 @@
             <h5 class="card-title">
                 <?= $title ?>
             </h5>
-            <!-- <div>
-                <?= $lang ?>
-            </div>
             <p class="card-text">
-                <?= $overview ?>
+                <?= $price ?>
             </p>
-            <div class="d-flex justify-content-between align-items-flex-start">
-                <div>
-                    <?= $vote ?>
-                </div>
-                <div>
-                    <?= $genre ?>
-                </div>
-            </div> -->
         </div>
     </div>
 </div>

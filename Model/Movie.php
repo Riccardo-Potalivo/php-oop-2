@@ -22,30 +22,40 @@ class Movie extends Product
         $this->genre = $genre;
 
     }
-
+    public function getVote()
+    {
+        $vote = ceil($this->vote_average / 2);
+        $template = "<p>";
+        for ($n = 1; $n <= 5; $n++) {
+            $template .= $n <= $vote ? '<i class="fa-solid fa-star"></i>' : '<i class="fa-regular fa-star"></i>';
+        }
+        $template .= '</p>';
+        return $template;
+    }
     public function formatCard()
     {
+
+        if (ceil($this->vote_average) < 8) {
+            try {
+                $this->setDiscount(10 - $this->vote_average);
+            } catch (Exception $e) {
+                $error = $e->getMessage();
+            }
+        }
+
         $cardItem = [
+            'error' => $error ?? '',
+            'discount' => $this->getDiscount(),
             'img' => $this->poster_path,
             'title' => $this->title,
             'lang' => $this->original_language,
             'overview' => $this->overview,
-            'vote' => $this->vote_average,
+            'vote' => $this->getVote(),
             'genre' => $this->genre->name,
             'price' => $this->price,
         ];
 
         return $cardItem;
-
-        // $img = $this->poster_path;
-        // $title = $this->title;
-        // $lang = $this->original_language;
-        // $overview = $this->overview;
-        // $vote = $this->vote_average;
-        // $genre = $this->genre->name;
-        // $price = $this->price;
-
-        // include __DIR__ . '/../Views/cardMovie.php';
     }
 
     public static function fetchAll()

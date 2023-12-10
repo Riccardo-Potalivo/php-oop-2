@@ -5,9 +5,27 @@
             <h5 class="card-title">
                 <?= $title ?>
             </h5>
-            <p class="card-text">
-                <?= $price ?>
-            </p>
+            <div>
+                <?php if (isset($vote)) { ?>
+                    <div>
+                        <?= $vote ?>
+                    </div>
+                <?php } ?>
+                <?php if (isset($genre)) { ?>
+                    <div>
+                        <?= $genre ?>
+                    </div>
+                <?php } ?>
+                <?php if (isset($discount)) { ?>
+                    <div>
+                        Sconto:
+                        <?= $discount ?> %
+                    </div>
+                <?php } ?>
+                <div>
+                    <?= $price ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>

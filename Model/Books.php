@@ -16,13 +16,21 @@ class Books extends Product
 
     }
 
-    public function printCArd()
+    public function formatCard()
     {
-        $img = $this->thumbnailUrl;
-        $title = $this->title;
-        $price = $this->price;
+        $cardItem = [
+            'img' => $this->thumbnailUrl,
+            'title' => $this->title,
+            'price' => $this->price,
 
-        include __DIR__ . "/../Views/cardBook.php";
+        ];
+        return $cardItem;
+
+        // $img = $this->thumbnailUrl;
+        // $title = $this->title;
+        // $price = $this->price;
+
+        // include __DIR__ . "/../Views/cardBook.php";
     }
     public static function fetchAll()
     {

@@ -15,14 +15,22 @@ class Steam extends Product
 
     }
 
-    public function printCArd()
+    public function formatCard()
     {
-        $img = $this->appid;
-        $title = $this->name;
-        $icon = $this->img_icon_url;
-        $price = $this->price;
+        $cardItem = [
+            'img' => $this->appid,
+            'title' => $this->name,
+            'icon' => $this->img_icon_url,
+            'price' => $this->price
+        ];
+        return $cardItem;
 
-        include __DIR__ . "/../Views/cardGame.php";
+        // $img = $this->appid;
+        // $title = $this->name;
+        // $icon = $this->img_icon_url;
+        // $price = $this->price;
+
+        // include __DIR__ . "/../Views/cardGame.php";
     }
 
     public static function fetchAll()

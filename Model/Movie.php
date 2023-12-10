@@ -23,18 +23,29 @@ class Movie extends Product
 
     }
 
-    public function printCArd()
+    public function formatCard()
     {
-        $img = $this->poster_path;
-        $title = $this->title;
-        $lang = $this->original_language;
-        $overview = $this->overview;
-        $vote = $this->vote_average;
-        $genre = $this->genre->name;
-        $price = $this->price;
+        $cardItem = [
+            'img' => $this->poster_path,
+            'title' => $this->title,
+            'lang' => $this->original_language,
+            'overview' => $this->overview,
+            'vote' => $this->vote_average,
+            'genre' => $this->genre->name,
+            'price' => $this->price,
+        ];
 
+        return $cardItem;
 
-        include __DIR__ . '/../Views/cardMovie.php';
+        // $img = $this->poster_path;
+        // $title = $this->title;
+        // $lang = $this->original_language;
+        // $overview = $this->overview;
+        // $vote = $this->vote_average;
+        // $genre = $this->genre->name;
+        // $price = $this->price;
+
+        // include __DIR__ . '/../Views/cardMovie.php';
     }
 
     public static function fetchAll()

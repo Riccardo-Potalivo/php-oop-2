@@ -9,7 +9,7 @@ $games = Steam::fetchAll();
     <h2>Games</h2>
     <div class="row">
         <?php foreach ($games as $game) {
-            $game->printCard();
+            $game->printCard($game->formatCard());
         } ?>
     </div>
 </section>

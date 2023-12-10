@@ -9,7 +9,7 @@ $movies = Movie::fetchAll();
     <h2>Movies</h2>
     <div class="row">
         <?php foreach ($movies as $movie) {
-            $movie->printCard();
+            $movie->printCard($movie->formatCard());
         } ?>
     </div>
 </section>
